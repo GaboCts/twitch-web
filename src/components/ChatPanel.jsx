@@ -1,20 +1,19 @@
-export function ChatPanel ({ channel }) {
+export function ChatPanel({ channel }) {
+    const parent = window.location.hostname
+
+    const chatUrl = new URL(
+        `https://www.twitch.tv/embed/${encodeURIComponent(channel)}/chat`
+    )
+
+    chatUrl.searchParams.set('parent', parent)
+    chatUrl.searchParams.set('darkpopout', '')
+
     return (
         <section className="chat-panel">
-            <div className="chat-header">
-                <h2>Chat en vivo</h2>
-                <span className="chat-indicator">
-                    <span className="status-dot" />
-                    Twitch
-                </span>
-            </div>
-
             <iframe
-                src={`https://www.twitch.tv/embed/${encodeURIComponent(
-                    channel
-                )}/chat?parent=${encodeURIComponent(parent)}&darkpopout`}
+                src={chatUrl.toString()}
                 title="Chat de Twitch"
-                loading="lazy"
+                allow="clipboard-write"
             />
         </section>
     )

@@ -3,9 +3,9 @@ export function PageHead ({ channel }) {
         <section className="page-heading" id="directo">
             <div>
                 <p className="eyebrow">LIVE EXPERIENCE</p>
-                <h1>Un espacio para disfrutar.</h1>
+                <h1>Un espacio libre para disfrutar.</h1>
                 <p className="page-description">
-                    El directo, la comunidad y todo en un mismo lugar.
+                    El directo y la comunidad en un mismo lugar.
                 </p>
             </div>
 

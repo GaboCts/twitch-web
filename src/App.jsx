@@ -7,32 +7,36 @@ import { Footer } from './components/Footer'
 import './App.css'
 
 // Valores por cambiar
-const CHANNEL = 'xCosmo_'
-const DESCRIPTION = 'Bienvenido a mi espacio. Disfruta del directo.'
+const channel = 'xCosmo_'
+const title = `Extra Stream - ${ channel }`
+const description = 'Bienvenido a mi espacio. Disfruta del directo.'
 
 export default function App() {
-  return (
-      <div className="app" id="inicio">
-          <Header channel={CHANNEL} />
+    return (
+        <>
+            <title>{ title }</title>
+            <div id="inicio">
+                <Header channel={ channel } />
 
-          <main className="main-content">
-              <PageHead channel={CHANNEL} />
+                <main className="main-content">
+                    <PageHead channel={ channel } />
 
-              <div className="stream-layout">
-                  <div className="main-column">
-                      <StreamPlayer channel={CHANNEL} />
+                    <div className="stream-layout">
+                        <div className="main-column">
+                            <StreamPlayer channel={ channel } />
 
-                      <ChannelInfo
-                          channel={CHANNEL}
-                          description={DESCRIPTION}
-                      />
-                  </div>
+                            <ChannelInfo
+                                channel={ channel }
+                                description={description}
+                            />
+                        </div>
 
-                  <ChatPanel channel={CHANNEL} />
-              </div>
+                        <ChatPanel channel={ channel } />
+                    </div>
 
-              <Footer />
-          </main>
-      </div>
+                    <Footer />
+                </main>
+            </div>
+        </>
   )
 }
