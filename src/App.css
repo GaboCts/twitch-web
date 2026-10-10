@@ -9,7 +9,7 @@
     justify-content: space-between;
     padding: 0 6%;
     border-bottom: 1px solid var(--border);
-    background: var(--background);
+    background: var(--surface-hover);
 }
 
 .brand {
@@ -17,9 +17,17 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 3px;
+}
+
+.brand-logo {
+    display: flex;
+}
+
+.brand-p {
+    color: var(--accent);
 }
 
 .brand-icon {
@@ -35,12 +43,33 @@
 
 .navigation a {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     transition: color 0.2s;
+    padding: 3px 8px;
 }
 
-.navigation a:hover {
-    color: var(--text);
+.twitch-new-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.twitch-new-tab svg {
+    width: 14px;
+    height: 14px;
+}
+
+.twitch-new-tab path {
+    fill: currentColor;
+}
+
+.navigation a:hover,
+.twitch-new-tab:hover {
+    color: var(--accent);
+    background: var(--surface-hover);
+    border-color: var(--accent);
+    text-decoration: underline;
 }
 
 .main-content {
@@ -66,7 +95,7 @@
 }
 
 .page-heading h1 {
-    font-size: clamp(27px, 3.4vw, 43px);
+    font-size: 27px;
     letter-spacing: -1.5px;
     line-height: 1.15;
 }
@@ -93,8 +122,18 @@
     transition: background 0.2s, border-color 0.2s;
 }
 
+.outline-button svg {
+    width: 12px;
+    height: 12px;
+}
+
+.outline-button path {
+    fill: currentColor;
+}
+
 .outline-button:hover,
 .twitch-button:hover {
+    color: var(--accent);
     background: var(--surface-hover);
     border-color: var(--accent);
 }
@@ -231,7 +270,7 @@
     padding-top: 20px;
     border-top: 1px solid var(--border);
     color: var(--muted);
-    font-size: 11px;
+    font-size: 13px;
 
 }
 
