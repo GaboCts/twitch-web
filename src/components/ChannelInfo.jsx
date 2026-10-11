@@ -1,3 +1,5 @@
+import { TwitchButton } from "./TwitchButton"
+
 export function ChannelInfo ({ channel, description }) {
     return (
         <section className="channel-info" id="canal">
@@ -6,19 +8,12 @@ export function ChannelInfo ({ channel, description }) {
             </div>
 
             <div className="channel-details">
-                <p className="eyebrow">CANAL DE TWITCH</p>
+                <p className="eyebrow">INFORMACIÓN DEL STREAM</p>
                 <h2>{channel}</h2>
                 <p>{description}</p>
             </div>
 
-            <a
-                className="twitch-button"
-                href={`https://www.twitch.tv/${encodeURIComponent(channel)}`}
-                target="_blank"
-                rel="noreferrer"
-            >
-                Visitar canal ↗
-            </a>
+            <TwitchButton text="Visitar canal" channel={channel} />
         </section>
     )
 }

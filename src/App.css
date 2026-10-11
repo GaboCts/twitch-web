@@ -107,8 +107,7 @@
     font-size: 14px;
 }
 
-.outline-button,
-.twitch-button {
+.outline-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -123,16 +122,11 @@
 }
 
 .outline-button svg {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 }
 
-.outline-button path {
-    fill: currentColor;
-}
-
-.outline-button:hover,
-.twitch-button:hover {
+.outline-button:hover {
     color: var(--accent);
     background: var(--surface-hover);
     border-color: var(--accent);
@@ -332,10 +326,6 @@
     .channel-info {
         flex-wrap: wrap;
     }
-
-    .twitch-button {
-        margin-left: auto;
-    }
 }
 
 @media (max-width: 420px) {
@@ -355,9 +345,5 @@
 
     .channel-info {
         padding: 14px;
-    }
-
-    .channel-info .twitch-button {
-        width: 100%;
     }
 }
