@@ -9,10 +9,6 @@ export function StreamPlayer({ channel }) {
 
     return (
         <div className="stream-player">
-            <iframe
-                src={`https://player.twitch.tv/?${params}`}
-                allowfullscreen="true">
-            </iframe>
         </div>
     )
 }
