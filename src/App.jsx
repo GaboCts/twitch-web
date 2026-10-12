@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router'
+import { lazy } from 'react'
 
 import { Header } from './components/Header'
-import { HomePage } from './pages/HomePage'
-import { StreamPage } from './pages/StreamPage'
 import { Footer } from './components/Footer'
 import './App.css'
+
+const HomePage = lazy(() => import('./pages/HomePage.jsx'))
+const StreamPage = lazy(() => import('./pages/StreamPage.jsx'))
 
 const description = 'Bienvenido a mi espacio. Disfruta del directo.'
 

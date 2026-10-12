@@ -5,7 +5,7 @@ import { StreamPlayer } from '../components/StreamPlayer'
 import { ChatPanel } from '../components/ChatPanel'
 import { ChannelInfo } from '../components/ChannelInfo'
 
-export function StreamPage ({ description }) {
+export default function StreamPage ({ description }) {
     const { channel } = useParams()
     const title = `Extra Stream - ${ channel }`
     
