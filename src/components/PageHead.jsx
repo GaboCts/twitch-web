@@ -1,4 +1,4 @@
-import { TwitchButton } from "./TwitchButton"
+import { TwitchButton } from './TwitchButton'
 
 export function PageHead ({ channel }) {
     return (
@@ -11,7 +11,7 @@ export function PageHead ({ channel }) {
                 </p>
             </div>
 
-            <TwitchButton text="Abrir en twitch" channel={channel} />
+            <TwitchButton text="Abrir en twitch" channel={ channel } />
         </section>
     )
 }

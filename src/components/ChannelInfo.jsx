@@ -9,11 +9,10 @@ export function ChannelInfo ({ channel, description }) {
 
             <div className="channel-details">
                 <p className="eyebrow">INFORMACIÓN DEL STREAM</p>
-                <h2>{channel}</h2>
-                <p>{description}</p>
+                <p>{ description }</p>
             </div>
 
-            <TwitchButton text="Visitar canal" channel={channel} />
+            <TwitchButton text="Visitar canal" channel={ channel } />
         </section>
     )
 }

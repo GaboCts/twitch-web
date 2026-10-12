@@ -7,7 +7,7 @@ export function TwitchButton ({ text, channel }) {
                 rel="noreferrer"
             >
                 { text }
-                <svg xml:space="preserve" viewBox="0 0 2400 2800">
+                <svg xmlSpace="preserve" viewBox="0 0 2400 2800">
                     <path fill="#fff" d="m2200 1300-400 400h-400l-350 350v-350H600V200h1600z"/>
                     <g fill="#9146ff">
                         <path d="M500 0 0 500v1800h600v500l500-500h400l900-900V0H500zm1700 1300-400 400h-400l-350 350v-350H600V200h1600v1100z"/>
