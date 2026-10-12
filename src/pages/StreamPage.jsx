@@ -12,7 +12,7 @@ export default function StreamPage ({ description }) {
     return (
         <>
             <title>{ title }</title>
-            <div id="inicio">
+            <div className="body-page">
                 <main className="main-content">
                     <PageHead channel={ channel } />
 

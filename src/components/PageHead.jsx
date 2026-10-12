@@ -2,7 +2,7 @@ import { TwitchButton } from './TwitchButton'
 
 export function PageHead ({ channel }) {
     return (
-        <section className="page-heading" id="directo">
+        <section className="page-heading">
             <div>
                 <p className="eyebrow">LIVE EXPERIENCE</p>
                 <h1>Un espacio libre para disfrutar.</h1>
