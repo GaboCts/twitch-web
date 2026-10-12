@@ -7,8 +7,6 @@ export function Header ({ channel }) {
             </a>
 
             <nav className="navigation">
-                <a href="#directo">Directo</a>
-                <a href="#canal">Canal</a>
                 <a
                     className="twitch-new-tab"
                     href={`https://www.twitch.tv/${channel}`}

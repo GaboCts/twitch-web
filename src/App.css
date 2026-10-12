@@ -327,6 +327,7 @@
     color: var(--accent);
     font-size: 22px;
     font-weight: 700;
+    user-select: none;
 }
 
 .channel-avatar-picture {
