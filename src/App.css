@@ -46,7 +46,7 @@
     font-size: 16px;
     font-weight: 600;
     transition: color 0.2s;
-    padding: 3px 8px;
+    padding: 5px 12px;
 }
 
 .home-page {
@@ -145,31 +145,27 @@
     }
 }
 
-.twitch-new-tab {
+.support-tab {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    background-color: var(--border);
+    border-radius: 5px;
 }
 
-.twitch-new-tab svg {
+.support-tab svg {
     width: 14px;
     height: 14px;
 }
 
-.twitch-new-tab path {
-    fill: currentColor;
-}
-
-.navigation a:hover,
-.twitch-new-tab:hover {
+.support-tab:hover {
     color: var(--accent);
-    background: var(--surface-hover);
+    background: var(--surface);
     border-color: var(--accent);
-    text-decoration: underline;
 }
 
 .main-content {
-    width: 97vw;
+    width: 95vw;
     margin: 0 auto;
     padding: 15px 6% 24px;
 }
@@ -387,10 +383,6 @@
 
     .navigation {
         gap: 16px;
-    }
-
-    .navigation a {
-        font-size: 12px;
     }
 
     .main-content {
