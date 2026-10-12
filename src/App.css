@@ -233,6 +233,14 @@
     font-weight: 700;
 }
 
+.channel-avatar-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
 .channel-details {
     flex: 1;
     min-width: 0;
