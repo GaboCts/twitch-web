@@ -14,7 +14,6 @@ export default function StreamPage ({ description }) {
             <title>{ title }</title>
             <div className="body-page">
                 <main className="main-content">
-                    <PageHead channel={ channel } />
 
                     <div className="stream-layout">
                         <div className="main-column">
