@@ -24,11 +24,7 @@ export default function App() {
                     <div className="stream-layout">
                         <div className="main-column">
                             <StreamPlayer channel={ channel } />
-
-                            <ChannelInfo
-                                channel={ channel }
-                                description={description}
-                            />
+                            <ChannelInfo channel={ channel } description={description} />
                         </div>
 
                         <ChatPanel channel={ channel } />
