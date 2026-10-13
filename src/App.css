@@ -31,8 +31,15 @@
 }
 
 .brand-icon {
-    color: var(--accent);
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-icon svg {
+    width: 32px;
+    height: 32px;
+    display: block;
 }
 
 .navigation {
@@ -46,7 +53,7 @@
     font-size: 16px;
     font-weight: 600;
     transition: color 0.2s;
-    padding: 5px 12px;
+    padding: 0px 12px;
 }
 
 .home-page {
@@ -154,6 +161,11 @@
 }
 
 .support-tab svg {
+    width: 38px;
+    height: auto;
+}
+
+.support-tab svg:last-child {
     width: 14px;
     height: 14px;
 }
@@ -162,6 +174,23 @@
     color: var(--accent);
     background: var(--surface);
     border-color: var(--accent);
+
+    &.support-tab div {
+        background: var(--accent);
+    }
+}
+
+.support-tab div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    background: var(--stripe);
+    padding: 4px 5px;
+    margin: 5px;
 }
 
 .main-content {
