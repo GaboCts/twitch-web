@@ -480,3 +480,9 @@
         margin: 5px 1px;
     }
 }
+
+@media (max-width: 670px) {
+        .footer {
+            font-size: 12px;
+        }
+}
