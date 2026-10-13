@@ -1,12 +1,14 @@
 export function ChatPanel({ channel }) {
     const parent = window.location.hostname
 
-    const chatUrl = new URL(
-        `https://www.twitch.tv/embed/${encodeURIComponent(channel)}/chat`
-    )
+    const params = new URLSearchParams({
+        parent,
+        darkpopout: '',
+    })
 
-    chatUrl.searchParams.set('parent', parent)
-    chatUrl.searchParams.set('darkpopout', '')
+    const chatUrl = new URL(
+        `https://www.twitch.tv/embed/${encodeURIComponent(channel)}/chat?${params}`
+    )
 
     return (
         <section className="chat-panel">
