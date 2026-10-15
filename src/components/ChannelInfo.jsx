@@ -4,8 +4,8 @@ export function ChannelInfo ({ channel, description }) {
     return (
         <section className="channel-info" id="canal">
             <div className="channel-avatar">
-                {channel.charAt(0).toUpperCase()}
-                {/*  <img className="channel-avatar-picture" src={`https://unavatar.io/twitch/${ channel }`} /> */}
+                {/* {channel.charAt(0).toUpperCase()} */}
+                <img className="channel-avatar-picture" src={`https://stream.extrastream.online/avatar/twitch/${ channel }`} />
             </div>
 
             <div className="channel-details">
